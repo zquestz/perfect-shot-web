@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  text-transform: uppercase;
+}
+
+@font-face {
+  font-family: "BMarmy";
+  src: url("../fonts/BMarmy.TTF") format("truetype");
+  font-weight: normal;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "superstar_memesbruh03";
+  src: url("../fonts/superstar_memesbruh03.ttf") format("truetype");
+  font-weight: normal;
+  font-display: swap;
+  font-style: normal;
+}

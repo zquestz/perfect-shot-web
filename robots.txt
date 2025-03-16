@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Sitemap: https://perfectshot.io/sitemap.xml
+
+# Block access to specific folders
+Disallow: /css/

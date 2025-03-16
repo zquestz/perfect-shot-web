@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: default
+  labels:
+    service: perfect-shot-web
+  name: perfect-shot-web
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      service: perfect-shot-web
+  template:
+    metadata:
+      labels:
+        service: perfect-shot-web
+    spec:
+      containers:
+        - image: zquestz/perfect-shot-web:latest
+          imagePullPolicy: Always
+          name: perfect-shot-web
+          ports:
+            - containerPort: 80
+          resources:
+            requests:
+              memory: "16Mi"
+      restartPolicy: Always
