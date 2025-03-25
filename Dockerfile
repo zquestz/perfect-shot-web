@@ -1,3 +1,4 @@
+# syntax=docker/dockerfile:1.7-labs
 FROM nginx
 COPY nginx.conf /etc/nginx/conf.d/default.conf
-COPY . /usr/share/nginx/html/
+COPY --exclude=nginx.conf . /usr/share/nginx/html/

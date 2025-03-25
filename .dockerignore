@@ -1,0 +1,11 @@
+.git
+kube
+node_modules
+.dockerignore
+build.sh
+Dockerfile
+LICENSE
+package.json
+package-lock.json
+README.md
+tailwind.config.js
