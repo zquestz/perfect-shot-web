@@ -1,6 +1,9 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --font-perfect-shot-title: BMarmy, "Space Grotesk", sans-serif;
+  --font-perfect-shot-text: superstar_memesbruh03, "Space Grotesk", sans-serif;
+}
 
 * {
   text-transform: uppercase;
