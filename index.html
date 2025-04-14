@@ -15,6 +15,7 @@
       name="keywords"
       content="Pefect Shot, asteroids, space, shooter, roguelike, arcade, game"
     />
+    <meta name="theme-color" content="#000000" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -63,6 +64,22 @@
     <meta name="apple-mobile-web-app-title" content="Perfect Shot" />
     <link rel="manifest" href="/site.webmanifest" />
 
+    <!-- Preload Fonts -->
+    <link
+      rel="preload"
+      href="fonts/BMarmy.TTF"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="fonts/superstar_memesbruh03.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+
     <!-- Custom Font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
@@ -73,20 +90,27 @@
     <link href="css/main.css" rel="stylesheet" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
   </head>
-  <body
-    class="bg-gray-50 flex flex-col min-h-[100dvh]"
-    style="background-image: url(&quot;img/background.webp&quot;)"
-  >
-    <main class="flex-grow text-white flex items-center justify-center">
+  <body class="bg-gray-50 flex flex-col min-h-[100dvh]">
+    <main
+      class="flex-grow text-white flex items-center justify-center"
+      aria-labelledby="main-heading"
+    >
       <div class="container mx-auto px-4 py-4 relative z-10">
         <div class="flex flex-col items-center">
-          <div class="w-40 h-40 mb-6 p-2">
-            <img src="img/logo.webp" sizes="128px" alt="Perfect Shot Logo" />
+          <div class="w-40 h-40">
+            <img
+              src="img/logo.webp"
+              sizes="128px"
+              alt="Perfect Shot Logo"
+              width="128"
+              height="128"
+            />
           </div>
           <h1
+            id="main-heading"
             class="text-5xl font-bold text-center mb-4 font-perfect-shot-title"
           >
             Perfect Shot
@@ -99,6 +123,24 @@
         <p class="text-4xl text-center mt-16 font-perfect-shot-text">
           Coming Soon.
         </p>
+        <div class="flex justify-center space-x-6 mt-8">
+          <a
+            href="https://x.com/perfectshotio"
+            aria-label="Twitter"
+            class="text-white hover:text-red-500 transition"
+            target="_blank"
+          >
+            <i class="fa-brands fa-x-twitter text-3xl"></i>
+          </a>
+          <a
+            href="https://bsky.app/profile/perfectshot.io"
+            aria-label="Bluesky"
+            class="text-white hover:text-red-500 transition"
+            target="_blank"
+          >
+            <i class="fa-brands fa-bluesky text-3xl"></i>
+          </a>
+        </div>
       </div>
     </main>
 
