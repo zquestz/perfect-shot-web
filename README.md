@@ -6,6 +6,7 @@ Small website for perfectshot.io
 We use Tailwind CSS, so the styles need to be rebuilt when added/removed from the html.
 
 ```
+npm install
 ./build.sh
 ```
 

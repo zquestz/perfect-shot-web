@@ -1,4 +1,5 @@
 .git
+.gitignore
 kube
 node_modules
 .dockerignore
