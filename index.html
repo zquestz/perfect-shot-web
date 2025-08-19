@@ -87,7 +87,7 @@
     />
 
     <!-- Your existing stylesheets -->
-    <link href="css/main.css?v=20250521" rel="stylesheet" />
+    <link href="css/main.css?v=20250818" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -164,37 +164,75 @@
         </div>
       </section>
 
-      <section class="container mx-auto px-4 py-4">
-        <p class="text-4xl text-center mt-8 font-perfect-shot-text">
-          Coming Soon.
-        </p>
-        <div class="flex justify-center space-x-6 mt-8">
+      <section class="container mx-auto px-8 py-4">
+        <!-- Platform Tiles -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8 max-w-4xl mx-auto"
+        >
+          <!-- Farcaster - Available Now -->
+          <a
+            href="https://farcaster.xyz/miniapps/Ger7p7BjfrAs/perfect-shot"
+            target="_blank"
+            class="block bg-black/30 p-8 shadow-xl hover:shadow-2xl hover:bg-black/60 transition-all duration-300 cursor-pointer group border border-white/10"
+          >
+            <div class="text-center">
+              <div class="w-16 h-16 mx-auto mb-6 flex items-center justify-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="64"
+                  height="64"
+                  viewBox="0 0 256 256"
+                  fill="none"
+                >
+                  <rect width="256" height="256" rx="56" fill="#7C65C1"></rect>
+                  <path
+                    d="M183.296 71.68H211.968L207.872 94.208H200.704V180.224L201.02 180.232C204.266 180.396 206.848 183.081 206.848 186.368V191.488L207.164 191.496C210.41 191.66 212.992 194.345 212.992 197.632V202.752H155.648V197.632C155.648 194.345 158.229 191.66 161.476 191.496L161.792 191.488V186.368C161.792 183.081 164.373 180.396 167.62 180.232L167.936 180.224V138.24C167.936 116.184 150.056 98.304 128 98.304C105.944 98.304 88.0638 116.184 88.0638 138.24V180.224L88.3798 180.232C91.6262 180.396 94.2078 183.081 94.2078 186.368V191.488L94.5238 191.496C97.7702 191.66 100.352 194.345 100.352 197.632V202.752H43.0078V197.632C43.0078 194.345 45.5894 191.66 48.8358 191.496L49.1518 191.488V186.368C49.1518 183.081 51.7334 180.396 54.9798 180.232L55.2958 180.224V94.208H48.1278L44.0318 71.68H72.7038V54.272H183.296V71.68Z"
+                    fill="white"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-3xl font-bold mb-4 font-perfect-shot-title text-white">
+                Farcaster
+              </h3>
+              <p class="text-lg font-perfect-shot-text text-green-400 group-hover:text-green-300 transition-colors">
+                ▶ Play Now
+              </p>
+            </div>
+          </a>
+
+          <!-- Telegram - Coming Soon -->
           <a
             href="https://t.me/perfectshotuniverse"
-            aria-label="Telegram"
-            class="text-white hover:text-red-500 transition"
             target="_blank"
+            class="block bg-black/30 p-8 shadow-xl hover:shadow-2xl hover:bg-black/60 transition-all duration-300 cursor-pointer group border border-white/10"
           >
-            <i class="fa-brands fa-telegram text-3xl"></i>
-          </a>
-          <a
-            href="https://x.com/perfectshotio"
-            aria-label="Twitter"
-            class="text-white hover:text-red-500 transition"
-            target="_blank"
-          >
-            <i class="fa-brands fa-x-twitter text-3xl"></i>
-          </a>
-          <a
-            href="https://bsky.app/profile/perfectshot.io"
-            aria-label="Bluesky"
-            class="text-white hover:text-red-500 transition"
-            target="_blank"
-          >
-            <i class="fa-brands fa-bluesky text-3xl"></i>
+            <div class="text-center">
+              <div class="w-16 h-16 mx-auto mb-6 flex items-center justify-center">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="12" fill="#0088cc"/>
+                  <path d="m5.491 11.74 11.57-4.461c.537-.194 1.006.131.832.943l.001-.001-1.97 9.281c-.146.658-.537.818-1.084.508l-3-2.211-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953z" fill="white"/>
+                </svg>
+              </div>
+              <h3 class="text-3xl font-bold mb-4 font-perfect-shot-title text-white">
+                Telegram
+              </h3>
+              <p class="text-lg font-perfect-shot-text text-gray-400 group-hover:text-gray-300 transition-colors">
+                Coming Soon
+              </p>
+            </div>
           </a>
         </div>
-      </section>
+
+        <!-- More Platforms Coming -->
+        <div class="text-center mt-12 pt-8 border-t border-gray-600">
+          <p class="text-xl text-center mb-2 font-perfect-shot-text opacity-80">
+            More platforms in development
+          </p>
+          <p class="text-sm text-center font-perfect-shot-text opacity-60">
+            Building the ultimate multi-platform space shooter experience
+          </p>
+        </div>
+
     </main>
 
     <!-- Footer -->
@@ -206,7 +244,7 @@
     <!-- Image Modal -->
     <div
       id="imageModal"
-      class="fixed inset-0 bg-black bg-opacity-90 hidden z-50 flex items-center justify-center overflow-hidden"
+      class="fixed inset-0 bg-black/90 hidden z-50 items-center justify-center overflow-hidden"
     >
       <div
         class="w-full h-full p-4 md:p-8 relative flex items-center justify-center"

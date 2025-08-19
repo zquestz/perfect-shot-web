@@ -61,6 +61,7 @@ function hideLoading() {
 
 function openModal(imageSrc, imageAlt) {
   const modal = document.getElementById("imageModal");
+  modal.classList.add("flex");
   modal.classList.remove("hidden");
   currentImageIndex = galleryImages.findIndex((img) => img.image === imageSrc);
   showLoading();
@@ -71,6 +72,7 @@ function openModal(imageSrc, imageAlt) {
 function closeModal() {
   const modal = document.getElementById("imageModal");
   modal.classList.add("hidden");
+  modal.classList.remove("flex");
   document.body.style.overflow = "";
 }
 
