@@ -1,4 +1,5 @@
 # Perfect Shot
+
 Small website for perfectshot.io
 
 ## Building the CSS
