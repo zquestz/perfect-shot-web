@@ -13,7 +13,7 @@
     />
     <meta
       name="keywords"
-      content="Pefect Shot, asteroids, space, shooter, roguelike, arcade, game"
+      content="Perfect Shot, asteroids, space, shooter, roguelike, arcade, game"
     />
     <meta name="theme-color" content="#000000" />
 
@@ -51,9 +51,9 @@
     <meta name="author" content="Perfect Shot Developers" />
 
     <!-- Preload -->
-    <link rel="preload" href="img/logo.webp" as="image" type="image/webp" />
+    <link rel="preload" href="/img/logo.webp" as="image" type="image/webp" />
 
-    <!-- Cannonical URL -->
+    <!-- Canonical URL -->
     <link rel="canonical" href="https://perfectshot.io/" />
 
     <!-- Favicon -->
@@ -67,14 +67,14 @@
     <!-- Preload Fonts -->
     <link
       rel="preload"
-      href="fonts/BMarmy.TTF"
+      href="/fonts/BMarmy.TTF"
       as="font"
       type="font/ttf"
       crossorigin
     />
     <link
       rel="preload"
-      href="fonts/superstar_memesbruh03.ttf"
+      href="/fonts/superstar_memesbruh03.ttf"
       as="font"
       type="font/ttf"
       crossorigin
@@ -86,14 +86,13 @@
       rel="stylesheet"
     />
 
-    <!-- Your existing stylesheets -->
-    <link href="css/main.css?v=20250818" rel="stylesheet" />
+    <link href="/css/main.css?v=20260407" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
   </head>
-  <body class="bg-gray-50 flex flex-col min-h-[100dvh]">
+  <body class="bg-black flex flex-col min-h-[100dvh]">
     <main
       class="flex-grow text-white flex flex-col items-center justify-center"
       aria-labelledby="main-heading"
@@ -102,7 +101,7 @@
         <div class="flex flex-col items-center">
           <div class="w-40 h-40 flex items-center justify-center">
             <img
-              src="img/logo.webp"
+              src="/img/logo.webp"
               sizes="128px"
               alt="Perfect Shot Logo"
               width="128"
@@ -129,10 +128,15 @@
           >
             <div
               class="overflow-hidden shadow-lg aspect-auto cursor-pointer group"
-              onclick="openModal('img/screenshots/1.webp', 'Perfect Shot Screenshot 1')"
+              onclick="
+                openModal(
+                  '/img/screenshots/1.webp',
+                  'Perfect Shot Screenshot 1',
+                )
+              "
             >
               <img
-                src="img/screenshots/1.webp"
+                src="/img/screenshots/1.webp"
                 alt="Perfect Shot Screenshot 1"
                 class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-125"
                 loading="lazy"
@@ -140,10 +144,15 @@
             </div>
             <div
               class="overflow-hidden shadow-lg aspect-auto cursor-pointer group"
-              onclick="openModal('img/screenshots/2.webp', 'Perfect Shot Screenshot 2')"
+              onclick="
+                openModal(
+                  '/img/screenshots/2.webp',
+                  'Perfect Shot Screenshot 2',
+                )
+              "
             >
               <img
-                src="img/screenshots/2.webp"
+                src="/img/screenshots/2.webp"
                 alt="Perfect Shot Screenshot 2"
                 class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-125"
                 loading="lazy"
@@ -151,10 +160,15 @@
             </div>
             <div
               class="overflow-hidden shadow-lg aspect-auto cursor-pointer group"
-              onclick="openModal('img/screenshots/3.webp', 'Perfect Shot Screenshot 3')"
+              onclick="
+                openModal(
+                  '/img/screenshots/3.webp',
+                  'Perfect Shot Screenshot 3',
+                )
+              "
             >
               <img
-                src="img/screenshots/3.webp"
+                src="/img/screenshots/3.webp"
                 alt="Perfect Shot Screenshot 3"
                 class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-125"
                 loading="lazy"
@@ -173,6 +187,7 @@
           <a
             href="https://farcaster.xyz/miniapps/Ger7p7BjfrAs/perfect-shot"
             target="_blank"
+            rel="noopener noreferrer"
             class="block bg-black/30 p-8 shadow-xl hover:shadow-2xl hover:bg-black/60 transition-all duration-300 cursor-pointer group border border-white/10"
           >
             <div class="text-center">
@@ -209,6 +224,7 @@
           <a
             href="https://t.me/perfectshotgamebot"
             target="_blank"
+            rel="noopener noreferrer"
             class="block bg-black/30 p-8 shadow-xl hover:shadow-2xl hover:bg-black/60 transition-all duration-300 cursor-pointer group border border-white/10"
           >
             <div class="text-center">
@@ -258,24 +274,27 @@
           <a
             href="https://t.me/perfectshotuniverse"
             aria-label="Telegram"
-            class="text-white hover:text-red-500 transition"
+            class="text-white"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <i class="fa-brands fa-telegram text-3xl"></i>
           </a>
           <a
             href="https://x.com/perfectshotio"
             aria-label="Twitter"
-            class="text-white hover:text-red-500 transition"
+            class="text-white"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <i class="fa-brands fa-x-twitter text-3xl"></i>
           </a>
           <a
             href="https://bsky.app/profile/perfectshot.io"
             aria-label="Bluesky"
-            class="text-white hover:text-red-500 transition"
+            class="text-white"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <i class="fa-brands fa-bluesky text-3xl"></i>
           </a>
@@ -286,11 +305,11 @@
     <!-- Footer -->
     <footer class="bg-black text-white py-6 mt-auto">
       <div class="container mx-auto px-4 text-center font-perfect-shot-text">
-        <p>&copy; 2025 Perfect Shot Developers. All rights reserved.</p>
-        <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 1rem;">
-          <a href="/privacy" style="text-decoration: underline; opacity: 0.8;">Privacy Policy</a>
-          <a href="/account" style="text-decoration: underline; opacity: 0.8;">Account Deletion</a>
-          <a href="/data" style="text-decoration: underline; opacity: 0.8;">Data Deletion</a>
+        <p>&copy; 2025-2026 Perfect Shot Developers. All rights reserved.</p>
+        <div class="flex justify-center gap-4 mt-4">
+          <a href="/privacy" class="underline opacity-80">Privacy Policy</a>
+          <a href="/account" class="underline opacity-80">Account Deletion</a>
+          <a href="/data" class="underline opacity-80">Data Deletion</a>
         </div>
       </div>
     </footer>
@@ -348,6 +367,6 @@
         </button>
       </div>
     </div>
-    <script src="js/gallery.js"></script>
+    <script src="/js/gallery.js"></script>
   </body>
 </html>

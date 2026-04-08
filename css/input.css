@@ -28,3 +28,11 @@
 body {
   background-image: url("../img/background.webp");
 }
+
+a {
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--color-red-500);
+}
