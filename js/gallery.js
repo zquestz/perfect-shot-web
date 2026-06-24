@@ -1,14 +1,14 @@
 const galleryImages = [
   {
-    image: "img/screenshots/1.webp",
+    image: "/img/screenshots/1.webp",
     alt: "Perfect Shot Screenshot 1",
   },
   {
-    image: "img/screenshots/2.webp",
+    image: "/img/screenshots/2.webp",
     alt: "Perfect Shot Screenshot 2",
   },
   {
-    image: "img/screenshots/3.webp",
+    image: "/img/screenshots/3.webp",
     alt: "Perfect Shot Screenshot 3",
   },
 ];
